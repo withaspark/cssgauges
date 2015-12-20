@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>CSS Gauges Demo | Stephen Parker</title>
+	</head>
+	<body>
+		<h1>CSS Gauges</h1>
+		<p>
+			&copy;2015 Stephen Parker <a href="http://withaspark.com">http://withaspark.com</a>
+		</p>
+		<p>
+			See <a href="https://github.com/withaspark/cssgauges">https://github.com/withaspark/cssgauges</a>
+			for source and license.
+		</p>
+
+
+
+		<h2>Gauges using JQuery</h2>
+
+		<div class="gauge" value=2 max=5 units="&#9733;" color="gold"></div>
+		<div class="gauge" value="50" color="brown" bgcolor="black" thickness=20 animate=true></div>
+		<div class="gauge" value=124 max=200 units="GB" radius=200 thickness=50 animate=1></div>
+		<div class="gauge" value=124 max=200 units="GB" notext=true animate=false></div>
+		
+
+
+		<h2>Gauges using only CSS</h2>
+
+		<div class="gauge gauge-0">
+		   <div class="outer">
+		      <div class="inner"></div>
+		      <div class="cover"></div>
+		      <div class="value">0%</div>
+		   </div>
+		</div>
+		<div class="gauge gauge-10">
+		   <div class="outer">
+		      <div class="inner"></div>
+		      <div class="cover"></div>
+		      <div class="value">10%</div>
+		   </div>
+		</div>
+		<div class="gauge gauge-20">
+		   <div class="outer">
+		      <div class="inner"></div>
+		      <div class="cover"></div>
+		      <div class="value">20%</div>
+		   </div>
+		</div>
+		<div class="gauge gauge-30">
+		   <div class="outer">
+		      <div class="inner"></div>
+		      <div class="cover"></div>
+		      <div class="value">30%</div>
+		   </div>
+		</div>
+		<div class="gauge gauge-40">
+		   <div class="outer">
+		      <div class="inner"></div>
+		      <div class="cover"></div>
+		      <div class="value">40%</div>
+		   </div>
+		</div>
+		<div class="gauge gauge-50">
+		   <div class="outer">
+		      <div class="inner"></div>
+		      <div class="cover"></div>
+		      <div class="value">50%</div>
+		   </div>
+		</div>
+		<div class="gauge gauge-60">
+		   <div class="outer">
+		      <div class="inner"></div>
+		      <div class="cover"></div>
+		      <div class="value">60%</div>
+		   </div>
+		</div>
+		<div class="gauge gauge-70">
+		   <div class="outer">
+		      <div class="inner"></div>
+		      <div class="cover"></div>
+		      <div class="value">70%</div>
+		   </div>
+		</div>
+		<div class="gauge gauge-80">
+		   <div class="outer">
+		      <div class="inner"></div>
+		      <div class="cover"></div>
+		      <div class="value">80%</div>
+		   </div>
+		</div>
+		<div class="gauge gauge-90">
+		   <div class="outer">
+		      <div class="inner"></div>
+		      <div class="cover"></div>
+		      <div class="value">90%</div>
+		   </div>
+		</div>
+		<div class="gauge gauge-100">
+		   <div class="outer">
+		      <div class="inner"></div>
+		      <div class="cover"></div>
+		      <div class="value">100%</div>
+		   </div>
+		</div>
+
+		
+
+		<!-- jQuery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+		<!-- Gauge Code -->
+		<link href="gauges.css" rel="stylesheet" type="text/css">
+		<script src="gauges.min.js"></script>
+	</body>
+</html>

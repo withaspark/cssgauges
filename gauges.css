@@ -1,0 +1,63 @@
+.gauge {
+	position: relative;
+	display: inline-block;
+	height: 50px;
+	width: 100px;
+	overflow: hidden;
+	background-color: #fff;
+	color: #8cc;
+}
+
+.gauge .outer,
+.gauge .inner {
+	border-radius: 50%;
+}
+
+.gauge .outer {
+	position: absolute;
+	background-color: #8cc;
+	width: 100px;
+	height: 100px;
+	padding: 0px 0px 0px 0px;
+}
+
+.gauge .inner {
+	position: absolute;
+	background-color: #fff;
+	width: 80px;
+	height: 80px;
+	top: 10px;
+	left: 10px;
+}
+
+.gauge .cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 50%;
+	left: 0px;
+	transform-origin: bottom center;
+	background-color: #fff;
+	opacity: 0.75;
+}
+.gauge .value {
+	position: absolute;
+	top: -1.2em;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	text-align: center;
+	line-height: 1em;
+	margin-top: 50%;
+}
+.gauge.gauge-0 .cover { transform: rotate(0deg); }
+.gauge.gauge-10 .cover { transform: rotate(18deg); }
+.gauge.gauge-20 .cover { transform: rotate(36deg); }
+.gauge.gauge-30 .cover { transform: rotate(54deg); }
+.gauge.gauge-40 .cover { transform: rotate(72deg); }
+.gauge.gauge-50 .cover { transform: rotate(90deg); }
+.gauge.gauge-60 .cover { transform: rotate(108deg); }
+.gauge.gauge-70 .cover { transform: rotate(126deg); }
+.gauge.gauge-80 .cover { transform: rotate(144deg); }
+.gauge.gauge-90 .cover { transform: rotate(162deg); }
+.gauge.gauge-100 .cover { transform: rotate(180deg); }
