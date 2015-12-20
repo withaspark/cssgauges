@@ -9,7 +9,7 @@ For examples, see [example.html](example.html).
 
 ### Gauges using JQuery ###
 
-For less markup and greater customization, use with with jQuery. Include some version of the jQuery library (I haven't tested compatibility with all versions yet). In the future, I think I'll remove the dependency on jQuery and rewrite with Javascript only, but until then...
+For less markup and greater customization, use with jQuery. Include some version of the jQuery library (I haven't tested compatibility with all versions yet). In the future, I think I'll remove the dependency on jQuery and rewrite with Javascript only, but until then...
 
 ```
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -44,6 +44,8 @@ and create your markup with a class of ```gauge-<percentFilled>``` where ```<per
    </div>
 </div>
 ```
+
+For now, I only added transforms for 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 percent--feel free to add intermediate values to [gauges.css](gauges.css).
 
 ## Options ##
 
