@@ -7,7 +7,7 @@ For examples, see [example.html](example.html).
 
 ## Examples ##
 
-![alt text](https://withaspark/misc/cssgauges_ss.png "Screenshot")
+![alt text](https://withaspark.com/misc/cssgauges_ss.png "Screenshot")
 
 ## Usage ##
 
