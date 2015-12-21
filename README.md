@@ -51,7 +51,7 @@ For now, I only added transforms for 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 
 
 Attribute|Type|Use
 ---------|----|---
-```value```|```float```|Value of fille. Required.
+```value```|```float```|Value of fill. Required.
 ```animate```|```int|bool```|Whether the gauge should be animated and "dial up" to position. Accepts ```true```, ```false```, ```1```, ```0```. Optional. Default, ```0``` no animation.
 ```bgcolor```|```string```|Color of the gauge background. Optional. Default, the ```background-color``` specified in css or inline for this ```gauge``` element, ```#fff```.
 ```color```|```string```|Color of the gauge and value. Optional. Default, the ```color``` specified in css or inline for this ```gauge``` element, ```#8cc```.
