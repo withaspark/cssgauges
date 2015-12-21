@@ -5,31 +5,31 @@ $(document).ready(function() {
 			var fVal = $(this).attr("value");
 			var sUnits = $(this).attr("units");
 				// Assume units if not provided
-				if (typeof sUnits == 'undefined') sUnits = "%";
+				if (typeof sUnits == "undefined") sUnits = "%";
 			var fMax = $(this).attr("max");
 				// Assume max if not provided
-				if (typeof fMax == 'undefined') fMax = 100.0;
+				if (typeof fMax == "undefined") fMax = 100.0;
 			var fMin = $(this).attr("min");
 				// Assume min if not provided
-				if (typeof fMin == 'undefined') fMin = 0.0;
+				if (typeof fMin == "undefined") fMin = 0.0;
 			var sColor = $(this).attr("color");
 				// Assume color if not provided
-				if (typeof sColor == 'undefined') sColor = $(this).css("color");
+				if (typeof sColor == "undefined") sColor = $(this).css("color");
 			var sBgColor = $(this).attr("bgcolor");
 				// Assume background color if not provided
-				if (typeof sBgColor == 'undefined') sBgColor = $(this).css("background-color");
+				if (typeof sBgColor == "undefined") sBgColor = $(this).css("background-color");
 			var iRadius = $(this).attr("radius");
 				// Assume radius if not provided
-				if (typeof iRadius == 'undefined') iRadius = 2*$(this).height();
+				if (typeof iRadius == "undefined") iRadius = 2*$(this).height();
 			var iThickness = $(this).attr("thickness");
 				// Assume thickness if not provided
-				if (typeof iThickness == 'undefined') iThickness = $(this).height()/5;
+				if (typeof iThickness == "undefined") iThickness = $(this).height()/5;
 			var sAnimate = $(this).attr("animate");
 				// Assume animate if not provided
-				if (typeof sAnimate == 'undefined') sAnimate = "0";
+				if (typeof sAnimate == "undefined") sAnimate = "0";
 			var sNoText = $(this).attr("notext");
 				// Assume notext if not provided
-				if (typeof sNoText == 'undefined') sNoText = "0";
+				if (typeof sNoText == "undefined") sNoText = "0";
 
 			// Calculate percentage before assuming units
 			var fPercentage = (fVal-fMin)/(fMax-fMin);
@@ -62,7 +62,11 @@ $(document).ready(function() {
 					{fakeNumericProp: (180*fPercentage)},
 					{
 						step: function(current, effect) {
-							$(this).css('transform','rotate('+current+'deg)'); 
+							$(this).css({
+								"-ms-transform": "rotate("+current+"deg)",
+								"-webkit-transform": "rotate("+current+"deg)",
+								"transform": "rotate("+current+"deg)"
+							}); 
 						},
 						duration: 2000
 					}

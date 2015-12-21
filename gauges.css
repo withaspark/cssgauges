@@ -36,6 +36,8 @@
 	height: 100%;
 	bottom: 50%;
 	left: 0px;
+	-ms-transform-origin: bottom center;
+	-webkit-transform-origin: bottom center;
 	transform-origin: bottom center;
 	background-color: #fff;
 	opacity: 0.75;
@@ -50,14 +52,58 @@
 	line-height: 1em;
 	margin-top: 50%;
 }
-.gauge.gauge-0 .cover { transform: rotate(0deg); }
-.gauge.gauge-10 .cover { transform: rotate(18deg); }
-.gauge.gauge-20 .cover { transform: rotate(36deg); }
-.gauge.gauge-30 .cover { transform: rotate(54deg); }
-.gauge.gauge-40 .cover { transform: rotate(72deg); }
-.gauge.gauge-50 .cover { transform: rotate(90deg); }
-.gauge.gauge-60 .cover { transform: rotate(108deg); }
-.gauge.gauge-70 .cover { transform: rotate(126deg); }
-.gauge.gauge-80 .cover { transform: rotate(144deg); }
-.gauge.gauge-90 .cover { transform: rotate(162deg); }
-.gauge.gauge-100 .cover { transform: rotate(180deg); }
+.gauge.gauge-0 .cover {
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+.gauge.gauge-10 .cover {
+	-ms-transform: rotate(18deg);
+	-webkit-transform: rotate(18deg);
+	transform: rotate(18deg);
+}
+.gauge.gauge-20 .cover {
+	-ms-transform: rotate(36deg);
+	-webkit-transform: rotate(36deg);
+	transform: rotate(36deg);
+}
+.gauge.gauge-30 .cover {
+	-ms-transform: rotate(54deg);
+	-webkit-transform: rotate(54deg);
+	transform: rotate(54deg);
+}
+.gauge.gauge-40 .cover {
+	-ms-transform: rotate(72deg);
+	-webkit-transform: rotate(72deg);
+	transform: rotate(72deg);
+}
+.gauge.gauge-590 .cover {
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.gauge.gauge-60 .cover {
+	-ms-transform: rotate(108deg);
+	-webkit-transform: rotate(108deg);
+	transform: rotate(108deg);
+}
+.gauge.gauge-70 .cover {
+	-ms-transform: rotate(126deg);
+	-webkit-transform: rotate(126deg);
+	transform: rotate(126deg);
+}
+.gauge.gauge-80 .cover {
+	-ms-transform: rotate(144deg);
+	-webkit-transform: rotate(144deg);
+	transform: rotate(144deg);
+}
+.gauge.gauge-90 .cover {
+	-ms-transform: rotate(162deg);
+	-webkit-transform: rotate(162deg);
+	transform: rotate(162deg);
+}
+.gauge.gauge-100 .cover {
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}

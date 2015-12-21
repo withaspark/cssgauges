@@ -62,6 +62,18 @@ Attribute|Type|Use
 ```thickness```|```int```|Thickness of gauge in pixels. Optional. Default, one-fifth the ```height``` specified in css or inline for this ```gauge``` element, ```10px```.
 ```units```|```string```|Units of ```value```. Optional. Default, ```%```.
 
+## Browser Support ##
+
+Supported by the following browser versions:
+
+Browser|Version
+-------|-------
+Chrome|4.0+
+Internet Explorer|9.0+
+Firefox|3.5+
+Safari|3.2+
+Opera|15.0+
+
 ## License ##
 
 Please feel free to use in your projects (personal and commercial) under the terms of the [MIT License](LICENSE). Pull requests greatly appreciated!
