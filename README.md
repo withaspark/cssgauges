@@ -5,6 +5,10 @@ Easy CSS semi-circle gauges with Javascript optional.
 For examples, see [example.html](example.html).
 
 
+## Examples ##
+
+![alt text](https://raw.githubusercontent.com/withaspark/image-repo/gh-pages/projects/cssgauges/cssgauges_ss.png "Screenshot")
+
 ## Usage ##
 
 ### Gauges using JQuery ###
