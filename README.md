@@ -21,10 +21,10 @@ For less markup and greater customization, use with jQuery. Include some version
 <script src="gauges.min.js"></script>
 ```
 
-and create your markup with a class of ```gauge``` and specify at least the ```value``` attribute.
+and create your markup with a class of ```gauge``` and specify at least the ```data-value``` attribute.
 
 ```
-<div class="gauge" value=40></div>
+<span class="gauge" data-value="40"></span>
 ```
 
 This will create a default styled 40% filled gauge.
@@ -40,13 +40,13 @@ Simply include the stylesheet
 and create your markup with a class of ```gauge-<percentFilled>``` where ```<percentFilled>``` is the percentage of the gauge to fill. For example, a 40% filled gauge is created with the following markup:
 
 ```
-<div class="gauge gauge-40">
+<span class="gauge gauge-40">
    <div class="outer">
       <div class="inner"></div>
       <div class="cover"></div>
       <div class="value">40%</div>
    </div>
-</div>
+</span>
 ```
 
 For now, I only added transforms for 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 percent--feel free to add intermediate values to [gauges.css](gauges.css).
@@ -55,16 +55,16 @@ For now, I only added transforms for 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 
 
 Attribute|Type|Use
 ---------|----|---
-```value```|```float```|Value of fill. Required.
-```animate```|```int|bool```|Whether the gauge should be animated and "dial up" to position. Accepts ```true```, ```false```, ```1```, ```0```. Optional. Default, ```0``` no animation.
-```bgcolor```|```string```|Color of the gauge background. Optional. Default, the ```background-color``` specified in css or inline for this ```gauge``` element, ```#fff```.
-```color```|```string```|Color of the gauge and value. Optional. Default, the ```color``` specified in css or inline for this ```gauge``` element, ```#8cc```.
-```max```|```float```|Value that results in gauge completely filled. Optional. Default, ```100```.
-```min```|```float```|Value that results in gauge completely unfilled. Optional. Default, ```0```.
-```notext```|```int|bool```|Whether the value should be hidden within the gauge. Accepts ```true```, ```false```, ```1```, ```0```. Optional. Default, ```0``` not hidden/value is displayed.
-```radius```|```int```|Radius of gauge in pixels. Optional. Default, double the ```height``` specified in css or inline for this ```gauge``` element, ```100px```.
-```thickness```|```int```|Thickness of gauge in pixels. Optional. Default, one-fifth the ```height``` specified in css or inline for this ```gauge``` element, ```10px```.
-```units```|```string```|Units of ```value```. Optional. Default, ```%```.
+```data-value```|```float```|Value of fill. Required.
+```data-animate```|```int|bool```|Whether the gauge should be animated and "dial up" to position. Accepts ```true```, ```false```, ```1```, ```0```. Optional. Default, ```0``` no animation.
+```data-bgcolor```|```string```|Color of the gauge background. Optional. Default, the ```background-color``` specified in css or inline for this ```gauge``` element, ```#fff```.
+```data-color```|```string```|Color of the gauge and value. Optional. Default, the ```color``` specified in css or inline for this ```gauge``` element, ```#8cc```.
+```data-max```|```float```|Value that results in gauge completely filled. Optional. Default, ```100```.
+```data-min```|```float```|Value that results in gauge completely unfilled. Optional. Default, ```0```.
+```data-notext```|```int|bool```|Whether the value should be hidden within the gauge. Accepts ```true```, ```false```, ```1```, ```0```. Optional. Default, ```0``` not hidden/value is displayed.
+```data-radius```|```int```|Radius of gauge in pixels. Optional. Default, double the ```height``` specified in css or inline for this ```gauge``` element, ```100px```.
+```data-thickness```|```int```|Thickness of gauge in pixels. Optional. Default, one-fifth the ```height``` specified in css or inline for this ```gauge``` element, ```10px```.
+```data-units```|```string```|Units of ```data-value```. Optional. Default, ```%```.
 
 ## Browser Support ##
 

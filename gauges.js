@@ -2,32 +2,32 @@ $(document).ready(function() {
 	$(".gauge").each(function() {
 		// If using shorthand, fill in
 		if ($(this).children().length == 0) {
-			var fVal = $(this).attr("value");
-			var sUnits = $(this).attr("units");
+			var fVal = $(this).attr("data-value");
+			var sUnits = $(this).attr("data-units");
 				// Assume units if not provided
 				if (typeof sUnits == "undefined") sUnits = "%";
-			var fMax = $(this).attr("max");
+			var fMax = $(this).attr("data-max");
 				// Assume max if not provided
 				if (typeof fMax == "undefined") fMax = 100.0;
-			var fMin = $(this).attr("min");
+			var fMin = $(this).attr("data-min");
 				// Assume min if not provided
 				if (typeof fMin == "undefined") fMin = 0.0;
-			var sColor = $(this).attr("color");
+			var sColor = $(this).attr("data-color");
 				// Assume color if not provided
 				if (typeof sColor == "undefined") sColor = $(this).css("color");
-			var sBgColor = $(this).attr("bgcolor");
+			var sBgColor = $(this).attr("data-bgcolor");
 				// Assume background color if not provided
 				if (typeof sBgColor == "undefined") sBgColor = $(this).css("background-color");
-			var iRadius = $(this).attr("radius");
+			var iRadius = $(this).attr("data-radius");
 				// Assume radius if not provided
 				if (typeof iRadius == "undefined") iRadius = 2*$(this).height();
-			var iThickness = $(this).attr("thickness");
+			var iThickness = $(this).attr("data-thickness");
 				// Assume thickness if not provided
 				if (typeof iThickness == "undefined") iThickness = $(this).height()/5;
-			var sAnimate = $(this).attr("animate");
+			var sAnimate = $(this).attr("data-animate");
 				// Assume animate if not provided
 				if (typeof sAnimate == "undefined") sAnimate = "0";
-			var sNoText = $(this).attr("notext");
+			var sNoText = $(this).attr("data-notext");
 				// Assume notext if not provided
 				if (typeof sNoText == "undefined") sNoText = "0";
 

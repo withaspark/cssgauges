@@ -1,11 +1,25 @@
 .gauge {
 	position: relative;
-	display: inline-block;
 	height: 50px;
 	width: 100px;
 	overflow: hidden;
 	background-color: #fff;
 	color: #8cc;
+}
+div.gauge {
+	display: block;
+}
+span.gauge {
+	display: inline-block;
+}
+
+
+
+.gauge .outer,
+.gauge .inner,
+.gauge .cover,
+.gauge .value {
+	display: block;
 }
 
 .gauge .outer,
